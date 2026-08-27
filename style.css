@@ -2178,3 +2178,30 @@ body {
   }
   
 }
+@media (max-width: 620px) {
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px !important;
+    letter-spacing: 2px !important;
+    line-height: 1.1;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 390px) {
+
+  .hero-content h1 {
+    font-size: 27px !important;
+    letter-spacing: 1.5px !important;
+  }
+
+}
