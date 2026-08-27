@@ -62,6 +62,9 @@ const finalSection = document.querySelector(".final-section");
 const contactForm = document.querySelector("#contact-form");
 const formSuccess = document.querySelector(".form-success");
 
+const mobileParallaxQuery = window.matchMedia("(max-width: 900px)");
+const reducedMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+
 /* =========================
    Плавное появление блоков
 ========================= */
@@ -116,7 +119,27 @@ if (finalSection) {
 
 let animationFrameRequested = false;
 
+function resetParallax() {
+  sections.forEach((item) => {
+    if (item.section) {
+      item.section.style.transform = "";
+    }
+
+    if (item.image) {
+      item.image.style.transform = "";
+    }
+  });
+}
+
 function updateParallax() {
+  /* На телефонах и планшетах параллакс отключаем.
+     Это делает прокрутку стабильнее и легче для Safari/Chrome. */
+  if (mobileParallaxQuery.matches || reducedMotionQuery.matches) {
+    resetParallax();
+    animationFrameRequested = false;
+    return;
+  }
+
   const viewportHeight = window.innerHeight;
 
   sections.forEach((item) => {
@@ -172,7 +195,6 @@ function requestParallaxUpdate() {
   }
 
   animationFrameRequested = true;
-
   window.requestAnimationFrame(updateParallax);
 }
 
@@ -186,6 +208,16 @@ window.addEventListener(
 
 window.addEventListener(
   "resize",
+  requestParallaxUpdate
+);
+
+mobileParallaxQuery.addEventListener?.(
+  "change",
+  requestParallaxUpdate
+);
+
+reducedMotionQuery.addEventListener?.(
+  "change",
   requestParallaxUpdate
 );
 
