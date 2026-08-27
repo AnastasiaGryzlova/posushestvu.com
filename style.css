@@ -64,7 +64,7 @@ height:100%;
 
 background:rgba(255,255,255,.15);
 
-backdrop-filter:blur(1,5px);
+backdrop-filter:blur(1.5px);
 
 }
 
@@ -202,7 +202,7 @@ background:#F7F3ED;
 
 }
 /* -------------------------- */
-/* Второй экран */
+/* Р’С‚РѕСЂРѕР№ СЌРєСЂР°РЅ */
 /* -------------------------- */
 
 .section-mark{
@@ -271,7 +271,7 @@ object-fit:cover;
 transform:scale(1);
 
 transition:transform .8s ease;
-filter:blur(1,5px);
+filter:blur(1.5px);
 transform:scale(1.03);
 
 }
@@ -356,7 +356,7 @@ color:#555;
 
 }
 /* -------------------------- */
-/* Третий экран — философия */
+/* РўСЂРµС‚РёР№ СЌРєСЂР°РЅ вЂ” С„РёР»РѕСЃРѕС„РёСЏ */
 /* -------------------------- */
 
 .philosophy-section {
@@ -376,7 +376,7 @@ color:#555;
     object-fit: cover;
     object-position: center;
 
-    filter: blur(0,5px);
+    filter: blur(0.5px);
     transform: scale(1.02);
 
     will-change: transform;
@@ -498,7 +498,7 @@ color:#555;
     }
 }
 /* -------------------------- */
-/* Четвёртый экран — примерный план работы */
+/* Р§РµС‚РІС‘СЂС‚С‹Р№ СЌРєСЂР°РЅ вЂ” РїСЂРёРјРµСЂРЅС‹Р№ РїР»Р°РЅ СЂР°Р±РѕС‚С‹ */
 /* -------------------------- */
 
 .work-plan-section {
@@ -707,7 +707,7 @@ color:#555;
     font-size: 16px;
   }
 }
-/* Плавное появление содержимого */
+/* РџР»Р°РІРЅРѕРµ РїРѕСЏРІР»РµРЅРёРµ СЃРѕРґРµСЂР¶РёРјРѕРіРѕ */
 
 .reveal {
   opacity: 0;
@@ -723,21 +723,21 @@ color:#555;
   transform: translateY(0);
 }
 
-/* Третий экран — мягкое движение бамбука */
+/* РўСЂРµС‚РёР№ СЌРєСЂР°РЅ вЂ” РјСЏРіРєРѕРµ РґРІРёР¶РµРЅРёРµ Р±Р°РјР±СѓРєР° */
 
 .philosophy-image {
   transition: transform 0.2s linear;
   will-change: transform;
 }
 
-/* Четвёртый экран — мягкое движение общего изображения */
+/* Р§РµС‚РІС‘СЂС‚С‹Р№ СЌРєСЂР°РЅ вЂ” РјСЏРіРєРѕРµ РґРІРёР¶РµРЅРёРµ РѕР±С‰РµРіРѕ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ */
 
 .work-plan-image {
   transition: transform 0.2s linear;
   will-change: transform;
 }
 
-/* Последовательное появление пунктов */
+/* РџРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕРµ РїРѕСЏРІР»РµРЅРёРµ РїСѓРЅРєС‚РѕРІ */
 
 .plan-item {
   opacity: 0;
@@ -777,8 +777,8 @@ color:#555;
   transition-delay: 0.62s;
 }
 
-/* Отключение анимации для пользователей,
-которые выбрали уменьшение движения */
+/* РћС‚РєР»СЋС‡РµРЅРёРµ Р°РЅРёРјР°С†РёРё РґР»СЏ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№,
+РєРѕС‚РѕСЂС‹Рµ РІС‹Р±СЂР°Р»Рё СѓРјРµРЅСЊС€РµРЅРёРµ РґРІРёР¶РµРЅРёСЏ */
 
 @media (prefers-reduced-motion: reduce) {
   .reveal,
@@ -803,7 +803,7 @@ color:#555;
 
 }
 }
-/* Исправление анимации третьего экрана */
+/* РСЃРїСЂР°РІР»РµРЅРёРµ Р°РЅРёРјР°С†РёРё С‚СЂРµС‚СЊРµРіРѕ СЌРєСЂР°РЅР° */
 
 .philosophy-content.reveal {
   opacity: 0;
@@ -819,7 +819,7 @@ color:#555;
   transform: translateY(-50%);
 }
 /* -------------------------- */
-/* Пятая секция — книги */
+/* РџСЏС‚Р°СЏ СЃРµРєС†РёСЏ вЂ” РєРЅРёРіРё */
 /* -------------------------- */
 
 .books-section {
@@ -941,8 +941,8 @@ color:#555;
   line-height: 1.8;
 }
 
-/* Исправление анимации блока,
-чтобы он не съезжал из композиции */
+/* РСЃРїСЂР°РІР»РµРЅРёРµ Р°РЅРёРјР°С†РёРё Р±Р»РѕРєР°,
+С‡С‚РѕР±С‹ РѕРЅ РЅРµ СЃСЉРµР·Р¶Р°Р» РёР· РєРѕРјРїРѕР·РёС†РёРё */
 
 .books-content.reveal {
   opacity: 0;
@@ -1013,7 +1013,7 @@ color:#555;
   }
 }
 /* -------------------------- */
-/* Шестая секция — чай */
+/* РЁРµСЃС‚Р°СЏ СЃРµРєС†РёСЏ вЂ” С‡Р°Р№ */
 /* -------------------------- */
 
 .tea-section {
@@ -1205,7 +1205,7 @@ color:#555;
   }
 }
 /* -------------------------------- */
-/* Финальная секция — кресло */
+/* Р¤РёРЅР°Р»СЊРЅР°СЏ СЃРµРєС†РёСЏ вЂ” РєСЂРµСЃР»Рѕ */
 /* -------------------------------- */
 
 .final-section {
@@ -1242,7 +1242,7 @@ color:#555;
   will-change: transform;
 }
 
-/* Мягкая световая полоса, проходящая по кабинету */
+/* РњСЏРіРєР°СЏ СЃРІРµС‚РѕРІР°СЏ РїРѕР»РѕСЃР°, РїСЂРѕС…РѕРґСЏС‰Р°СЏ РїРѕ РєР°Р±РёРЅРµС‚Сѓ */
 
 .final-light {
   position: absolute;
@@ -1267,7 +1267,7 @@ color:#555;
   pointer-events: none;
 }
 
-/* Светлая область под текстом */
+/* РЎРІРµС‚Р»Р°СЏ РѕР±Р»Р°СЃС‚СЊ РїРѕРґ С‚РµРєСЃС‚РѕРј */
 
 .final-overlay {
   position: absolute;
@@ -1382,7 +1382,7 @@ color:#555;
   line-height: 1.75;
 }
 
-/* Форма */
+/* Р¤РѕСЂРјР° */
 
 .contact-form {
   width: min(570px, 100%);
@@ -1524,7 +1524,7 @@ color:#555;
   font-style: italic;
 }
 
-/* Запуск анимации секции */
+/* Р—Р°РїСѓСЃРє Р°РЅРёРјР°С†РёРё СЃРµРєС†РёРё */
 
 .final-section.is-visible .final-image {
   filter: blur(0.35px);
@@ -1589,7 +1589,7 @@ color:#555;
   }
 }
 
-/* Планшет */
+/* РџР»Р°РЅС€РµС‚ */
 
 @media (max-width: 900px) {
   .final-section {
@@ -1622,7 +1622,7 @@ color:#555;
   }
 }
 
-/* Телефон */
+/* РўРµР»РµС„РѕРЅ */
 
 @media (max-width: 620px) {
   .final-section {
@@ -1674,7 +1674,7 @@ color:#555;
   }
 }
 /* ==========================================
-   Плавный параллакс-переход между секциями
+   РџР»Р°РІРЅС‹Р№ РїР°СЂР°Р»Р»Р°РєСЃ-РїРµСЂРµС…РѕРґ РјРµР¶РґСѓ СЃРµРєС†РёСЏРјРё
    ========================================== */
 
 body {
@@ -1696,8 +1696,8 @@ body {
   will-change: transform;
 }
 
-/* Все изображения немного увеличиваем,
-   чтобы при движении не появлялись пустые края */
+/* Р’СЃРµ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ РЅРµРјРЅРѕРіРѕ СѓРІРµР»РёС‡РёРІР°РµРј,
+   С‡С‚РѕР±С‹ РїСЂРё РґРІРёР¶РµРЅРёРё РЅРµ РїРѕСЏРІР»СЏР»РёСЃСЊ РїСѓСЃС‚С‹Рµ РєСЂР°СЏ */
 
 .hero-image,
 .desk-image,
@@ -1710,7 +1710,7 @@ body {
   will-change: transform;
 }
 
-/* Мягкое перекрытие соседних секций */
+/* РњСЏРіРєРѕРµ РїРµСЂРµРєСЂС‹С‚РёРµ СЃРѕСЃРµРґРЅРёС… СЃРµРєС†РёР№ */
 
 .desk-section,
 .philosophy-section,
@@ -1722,8 +1722,8 @@ body {
   padding-top: 55px;
 }
 
-/* Небольшая мягкая дымка сверху,
-   чтобы место перекрытия не читалось линией */
+/* РќРµР±РѕР»СЊС€Р°СЏ РјСЏРіРєР°СЏ РґС‹РјРєР° СЃРІРµСЂС…Сѓ,
+   С‡С‚РѕР±С‹ РјРµСЃС‚Рѕ РїРµСЂРµРєСЂС‹С‚РёСЏ РЅРµ С‡РёС‚Р°Р»РѕСЃСЊ Р»РёРЅРёРµР№ */
 
 .desk-section::before,
 .philosophy-section::before,
@@ -1750,4 +1750,431 @@ body {
     rgba(247, 243, 237, 0.08) 45%,
     rgba(247, 243, 237, 0) 100%
   );
+}
+
+/* ==========================================
+   РњРѕР±РёР»СЊРЅР°СЏ Р°РґР°РїС‚Р°С†РёСЏ
+   Р”РѕР±Р°РІР»РµРЅРѕ РїРѕРІРµСЂС… РѕСЃРЅРѕРІРЅС‹С… СЃС‚РёР»РµР№
+   ========================================== */
+
+@media (max-width: 900px) {
+  html {
+    scroll-padding-top: 0;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* РќР° РјРѕР±РёР»СЊРЅС‹С… СЃРµРєС†РёРё РЅРµ РґРІРёРіР°РµРј С†РµР»РёРєРѕРј:
+     С‚Р°Рє РЅРµ РїРѕСЏРІР»СЏСЋС‚СЃСЏ Р±РµР»С‹Рµ С‰РµР»Рё Рё СЃРєР°С‡РєРё РїСЂРё РїСЂРѕРєСЂСѓС‚РєРµ. */
+  .hero,
+  .desk-section,
+  .philosophy-section,
+  .work-plan-section,
+  .books-section,
+  .tea-section,
+  .final-section {
+    min-height: 100svh;
+    margin-top: 0;
+    padding-top: 0;
+    transform: none !important;
+    will-change: auto;
+  }
+
+  .desk-section::before,
+  .philosophy-section::before,
+  .work-plan-section::before,
+  .books-section::before,
+  .tea-section::before,
+  .final-section::before {
+    display: none;
+  }
+
+  /* РџРµСЂРІС‹Р№ СЌРєСЂР°РЅ */
+  .hero {
+    min-height: 100svh;
+  }
+
+  .hero-image {
+    transform: none !important;
+    object-position: center;
+  }
+
+  .hero-content {
+    width: calc(100% - 48px);
+    max-width: 680px;
+  }
+
+  .subtitle {
+    margin-bottom: 28px;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    line-height: 1.6;
+  }
+
+  h1 {
+    margin-bottom: 30px;
+    font-size: clamp(46px, 9vw, 68px);
+    letter-spacing: 0.16em;
+    line-height: 1.05;
+  }
+
+  .symbol {
+    margin-bottom: 30px;
+  }
+
+  .symbol .line {
+    width: 90px;
+  }
+
+  .symbol .dot {
+    width: 11px;
+    height: 11px;
+    margin: 0 14px;
+  }
+
+  .motto {
+    margin-bottom: 46px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .button {
+    padding: 18px 34px;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+  }
+
+  /* Р’С‚РѕСЂРѕР№ СЌРєСЂР°РЅ */
+  #next,
+  .desk-section {
+    min-height: 900px;
+  }
+
+  .desk-image {
+    transform: none !important;
+    transition: none;
+    object-position: 42% center;
+  }
+
+  .desk-section:hover .desk-image {
+    transform: none !important;
+  }
+
+  .desk-overlay {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(247, 243, 237, 0.02) 0%,
+      rgba(247, 243, 237, 0.12) 38%,
+      rgba(247, 243, 237, 0.86) 63%,
+      #f7f3ed 100%
+    );
+  }
+
+  .desk-content {
+    top: auto;
+    right: clamp(24px, 6vw, 70px);
+    bottom: 70px;
+    left: clamp(24px, 6vw, 70px);
+    width: auto;
+    max-width: none;
+    transform: none;
+  }
+
+  .desk-content h2 {
+    margin-bottom: 28px;
+    font-size: clamp(42px, 7vw, 56px);
+    line-height: 1.08;
+  }
+
+  .desk-text {
+    max-width: 620px;
+    font-size: 17px;
+    line-height: 1.75;
+  }
+
+  /* РЎРµРєС†РёРё СЃ С‚РµРєСЃС‚РѕРј РїРѕРІРµСЂС… РёР·РѕР±СЂР°Р¶РµРЅРёСЏ */
+  .philosophy-image,
+  .work-plan-image,
+  .books-image,
+  .tea-image,
+  .final-image {
+    transform: none !important;
+    will-change: auto;
+  }
+
+  .philosophy-section {
+    min-height: 900px;
+  }
+
+  .philosophy-content {
+    bottom: 64px;
+  }
+
+  .philosophy-content h2,
+  .books-content h2,
+  .tea-content h2,
+  .final-content h2 {
+    font-size: clamp(42px, 7vw, 56px);
+  }
+
+  .philosophy-content.reveal,
+  .philosophy-content.reveal.is-visible {
+    transform: none;
+  }
+
+  .work-plan-section {
+    padding-top: 630px;
+  }
+
+  .books-section,
+  .tea-section {
+    min-height: 900px;
+  }
+
+  .final-section {
+    min-height: 1040px;
+  }
+
+  .final-content {
+    margin-bottom: calc(65px + env(safe-area-inset-bottom));
+  }
+
+  .form-field input {
+    /* РќРµ РґР°С‘Рј Safari СѓРІРµР»РёС‡РёРІР°С‚СЊ СЃС‚СЂР°РЅРёС†Сѓ РїСЂРё С„РѕРєСѓСЃРµ */
+    font-size: 18px;
+  }
+
+  .contact-button {
+    min-height: 54px;
+  }
+}
+
+@media (max-width: 620px) {
+  .hero-content {
+    width: calc(100% - 40px);
+  }
+
+  .subtitle {
+    margin-bottom: 24px;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+  }
+
+  h1 {
+    margin-bottom: 26px;
+    font-size: clamp(38px, 11vw, 52px);
+    letter-spacing: 0.12em;
+  }
+
+  .symbol {
+    margin-bottom: 26px;
+  }
+
+  .symbol .line {
+    width: 58px;
+  }
+
+  .symbol .dot {
+    width: 9px;
+    height: 9px;
+    margin: 0 11px;
+  }
+
+  .motto {
+    margin-bottom: 38px;
+    font-size: 18px;
+  }
+
+  .button {
+    width: min(100%, 310px);
+    padding: 17px 22px;
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+  }
+
+  #next,
+  .desk-section {
+    min-height: 850px;
+  }
+
+  .desk-image {
+    object-position: 40% center;
+  }
+
+  .desk-content {
+    right: 22px;
+    bottom: 48px;
+    left: 22px;
+  }
+
+  .section-mark {
+    justify-content: flex-start;
+    margin-bottom: 22px;
+  }
+
+  .section-mark .line {
+    width: 48px;
+  }
+
+  .desk-content h2 {
+    margin-bottom: 24px;
+    font-size: 40px;
+  }
+
+  .desk-text {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .philosophy-section {
+    min-height: 820px;
+  }
+
+  .philosophy-content {
+    right: 22px;
+    bottom: 44px;
+    left: 22px;
+  }
+
+  .philosophy-content h2,
+  .books-content h2,
+  .tea-content h2,
+  .final-content h2 {
+    font-size: 40px;
+    line-height: 1.08;
+  }
+
+  .philosophy-text {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .work-plan-section {
+    padding: 430px 22px 72px;
+  }
+
+  .work-plan-content h2 {
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+
+  .work-plan-list li {
+    padding: 15px 0;
+  }
+
+  .work-plan-text {
+    font-size: 16px;
+    line-height: 1.45;
+  }
+
+  .work-plan-note {
+    margin-top: 22px;
+  }
+
+  .books-section,
+  .tea-section {
+    min-height: 820px;
+  }
+
+  .books-content,
+  .tea-content {
+    margin-right: 22px;
+    margin-bottom: 46px;
+    margin-left: 22px;
+  }
+
+  .books-lead,
+  .tea-lead,
+  .final-lead {
+    font-size: 20px;
+    line-height: 1.45;
+  }
+
+  .books-text,
+  .tea-text,
+  .final-text {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .final-section {
+    min-height: 1010px;
+  }
+
+  .final-content {
+    margin-right: 22px;
+    margin-bottom: calc(38px + env(safe-area-inset-bottom));
+    margin-left: 22px;
+  }
+
+  .final-content h2 {
+    margin-bottom: 24px;
+  }
+
+  .final-text {
+    margin-bottom: 30px;
+  }
+
+  .form-field {
+    margin-bottom: 18px;
+  }
+
+  .form-field input {
+    padding: 12px 0;
+    font-size: 17px;
+  }
+
+  .contact-button {
+    width: 100%;
+    min-width: 0;
+    min-height: 54px;
+    padding: 14px 20px;
+  }
+
+  .contact-note {
+    font-size: 11px;
+  }
+
+  .final-tea-note {
+    margin-top: 28px;
+    font-size: 14px;
+    line-height: 1.55;
+  }
+}
+
+@media (max-width: 390px) {
+  h1 {
+    font-size: 36px;
+    letter-spacing: 0.09em;
+  }
+
+  .subtitle {
+    letter-spacing: 0.18em;
+  }
+
+  .desk-content h2,
+  .philosophy-content h2,
+  .work-plan-content h2,
+  .books-content h2,
+  .tea-content h2,
+  .final-content h2 {
+    font-size: 36px;
+  }
+
+  .work-plan-section {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .work-plan-list li {
+    grid-template-columns: 34px 1fr;
+    gap: 8px;
+  }
+  
 }
