@@ -226,9 +226,8 @@ requestParallaxUpdate();
 /* =========================
    Форма
 ========================= */
-
 if (contactForm) {
-  contactForm.addEventListener("submit", (event) => {
+  contactForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     const button =
@@ -237,16 +236,45 @@ if (contactForm) {
     const buttonText =
       button?.querySelector("span");
 
-    if (buttonText) {
-      buttonText.textContent = "Спасибо";
-    }
-
     if (button) {
       button.disabled = true;
     }
 
-    if (formSuccess) {
-      formSuccess.classList.add("is-visible");
+    if (buttonText) {
+      buttonText.textContent = "Отправляем...";
+    }
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        body: new FormData(contactForm),
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error("Ошибка отправки");
+      }
+
+      if (buttonText) {
+        buttonText.textContent = "Спасибо";
+      }
+
+      if (formSuccess) {
+        formSuccess.classList.add("is-visible");
+      }
+
+      contactForm.reset();
+
+    } catch (error) {
+      if (buttonText) {
+        buttonText.textContent = "Попробовать ещё раз";
+      }
+
+      if (button) {
+        button.disabled = false;
+      }
     }
   });
 }
