@@ -2205,13 +2205,3 @@ body {
   }
 
 }
-@media (max-width: 620px) {
-  body {
-    background: red !important;
-  }
-
-  .hero-content h1 {
-    color: red !important;
-    font-size: 20px !important;
-  }
-}
